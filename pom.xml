@@ -79,7 +79,7 @@
             <dependency>
                 <groupId>org.seedstack</groupId>
                 <artifactId>seedstack-bom</artifactId>
-                <version>15.11.3</version>
+                <version>16.4-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -189,4 +189,23 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>snapshots</id>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <id>ojo-libs-snapshot</id>
+                    <name>ojo-snapshots</name>
+                    <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 </project>
