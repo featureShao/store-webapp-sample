@@ -97,10 +97,6 @@
             <artifactId>business-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-web-undertow</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.seedstack.addons.swagger</groupId>
             <artifactId>swagger</artifactId>
         </dependency>
